@@ -1,5 +1,12 @@
 # JSONKit
 
+##更新说明
+- 去除xcode5的编译错误和警告
+
+--------
+
+
+
 JSONKit is dual licensed under either the terms of the BSD License, or alternatively under the terms of the Apache License, Version 2.0.<br />
 Copyright &copy; 2011, John Engelhart.
 
