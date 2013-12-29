@@ -1,5 +1,5 @@
 //
-//  JSONKitHelper.h
+//  JSONHelper.h
 //  
 
 //JSONKit 和 NSJSONSerialization的封装，如果系统支持NSJSONSerialization自动使用它，否则使用JSONKit
@@ -8,15 +8,15 @@
 //----- string  data type -------//
 //NSString *strJson = @"{\"flag\":\"内容\"}";
 //NSData *strJsonData = [strJson dataUsingEncoding:NSUTF8StringEncoding];
-//NSMutableDictionary *result = [JSONKitHelper jsonObjectWithString:strJson Encode:NSUTF8StringEncoding];
-//NSMutableDictionary *result2 = [JSONKitHelper jsonObjectWithData:strJsonData];
+//NSMutableDictionary *result = [JSONHelper jsonObjectWithString:strJson Encode:NSUTF8StringEncoding];
+//NSMutableDictionary *result2 = [JSONHelper jsonObjectWithData:strJsonData];
 
 // --- url type  location file type ---//
 //NSString *urlString = @"http://ehr.91yong.com/Service.nd?act=getClient&type=1";
 //NSURL *url = [[[NSURL alloc] initWithString:urlString] autorelease];
-//NSLog(@"%@", [JSONKitHelper jsonObjectWithURL:url]);
-//NSLog(@"%@", [JSONKitHelper jsonObjectWithURLWithException:url]);
-//NSLog(@"%@", [JSONKitHelper jsonObjectWithFile:@"yelp.json"]);
+//NSLog(@"%@", [JSONHelper jsonObjectWithURL:url]);
+//NSLog(@"%@", [JSONHelper jsonObjectWithURLWithException:url]);
+//NSLog(@"%@", [JSONHelper jsonObjectWithFile:@"yelp.json"]);
 
 //  Created by JSONKit on 12-3-15.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
@@ -32,7 +32,7 @@
 
 #import "JSONKit.h"
 
-@interface JSONKitHelper : NSObject {
+@interface JSONHelper : NSObject {
     
 }
 
